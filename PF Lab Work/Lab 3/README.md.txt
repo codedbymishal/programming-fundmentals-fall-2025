@@ -1,2 +1,2 @@
 # Lab 3: Operators
-Unary, binary and bitwise operators in C
+Unary, binary and ternary operators in C
