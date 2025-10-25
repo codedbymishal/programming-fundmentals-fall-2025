@@ -6,7 +6,7 @@ int main( )
     result = (op == '+') ? (num1 + num2) : (num1 - num2);
 	//prints num1+num2 if operator is +
 	//prints num1+num2 if operator is not +
-    printf("\n%d", result);
+    printf("\n%d %c %d = %d", num1,op,num2,result);
     return 0;
 	
 } 

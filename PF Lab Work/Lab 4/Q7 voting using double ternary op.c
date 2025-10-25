@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main() 
 {
     int age;
@@ -8,11 +7,11 @@ int main()
     printf("Enter your age: ");
     scanf("%d", &age);
 
-    (age < 0 || age > 100) ? 
+    (age < 0 || age > 100) ? //age range validation
         printf("Error! Age must be between 0 and 100!\n") : 
-        (age >= 18 ? 
-            printf("You are eligible to vote!\n") : 
-            printf("You are not eligible to vote!\n")
+        (age >= 18 ? //executes if false
+            printf("You are eligible to vote!\n") ://prints if true 
+            printf("You are not eligible to vote!\n")//prints if false
         );
 
     return 0;
