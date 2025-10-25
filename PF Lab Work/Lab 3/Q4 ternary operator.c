@@ -1,7 +1,7 @@
-#include <stdio.h>
-
-int main() 
+#include<stdio.h>
+int main()
 {
+
     float hours;
     float d1=0, d2=0, d3=0, d4=0, d5=0, avgsp;
 
@@ -74,7 +74,7 @@ int main()
                : (hours == 4) ? ((d1 + d2 + d3 + d4) / hours)
                : ((d1 + d2 + d3 + d4 + d5) / hours);
 
-        printf("Average speed: %.3f mph\n", avgsp);
+        printf("Average speed: %0.3f mph\n", avgsp);
     } 
     else 
 	{
