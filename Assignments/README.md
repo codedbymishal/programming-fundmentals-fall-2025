@@ -1,1 +1,1 @@
-PF Manual Assignments
+PF Manual Exercises
