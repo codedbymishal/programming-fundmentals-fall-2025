@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char fname[]="mishal";
+	char lname[]="sheeraz";
+	char fullname[30];
+	strcpy(fullname,fname);
+	strcat(fullname, " ");
+	strcat(fullname,lname);
+	printf("My full name is: %s",fullname);
+	return 0;
+}
