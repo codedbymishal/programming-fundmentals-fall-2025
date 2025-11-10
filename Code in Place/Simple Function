@@ -1,0 +1,11 @@
+#include<stdio.h>
+void printCourseInfo()// has no arg, does not return anything
+{
+	printf("Course: Programming Fundamentals – Learn, Code, Grow!\n“");
+}
+int main()
+{
+	printf("Calling function printCourseInfo!\n\n");
+	printCourseInfo();
+	return 0;
+}
