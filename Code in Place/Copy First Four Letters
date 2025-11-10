@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char mystr[] = "Programming"; // original string
+    char copystr[10]; //declare empty string
+    strncpy(copystr, mystr, 4); // copy first 4 characters (Prog)
+    copystr[4] = '\0'; // manually add null terminator at 5th pos (4th index)
+    printf("%s", copystr); 
+    return 0;
+}
