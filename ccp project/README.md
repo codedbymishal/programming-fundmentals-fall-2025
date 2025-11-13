@@ -1,1 +1,1 @@
-Hangman in C!
+Hangman Game in C!
