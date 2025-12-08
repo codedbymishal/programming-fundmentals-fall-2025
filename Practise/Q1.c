@@ -6,6 +6,7 @@ int main()
     fgets(str, sizeof(str), stdin); // or use 20
     str[strcspn(str, "\n")] = '\0';
     int length = 0;
+	
     while(str[length] != '\0') 
 	{
         length++;
