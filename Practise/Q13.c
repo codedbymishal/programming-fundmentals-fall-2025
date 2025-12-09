@@ -2,15 +2,15 @@
 
 int main() 
 {
-    int n, sum = 0, rem;
+    int num, sum = 0, rem;
     printf("Enter a number: ");
-    scanf("%d", &n);
+    scanf("%d", &num);
 
-    while(n > 0) 
+    while(num != 0) 
 	{
-        rem = n % 10;
+        rem = num % 10;
         sum += rem;
-        n /= 10;
+        num /= 10;
     }
 
     printf("Sum of digits = %d\n", sum);
