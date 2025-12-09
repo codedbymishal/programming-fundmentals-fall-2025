@@ -1,33 +1,41 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+void CountFrequency(int arr[], int n, int freq[])
+{
+	int i;
+    for ( i = 0; i < n; i++) 
+	{
+        freq[arr[i] - 1]++;
+    }
+}
 
 int main() 
 {
-    int n, i, j, count;
-    printf("Enter size of array: ");
+    srand(time(NULL));
+   
+    int i,n;
+    printf("Enter Size of Array: ");
     scanf("%d", &n);
 
-    int arr[n], visited[n];
-    for(i=0; i<n; i++) 
+    int array[n];
+
+    // Storing the Random numbers in array1 and printing
+    printf("Numbers: "); 
+    for( i = 0; i < n; i++)
 	{
-		printf("Enter element %d: ",i+1);
-        scanf("%d", &arr[i]);
-        visited[i] = 0; //initialise array
+        array[i] = (rand() % 10) + 1;  // numbers 1 to 10
+        printf("%d ", array[i]);
     }
 
-    for(i=0; i<n; i++) 
+    int freq[10] = {0};
+    CountFrequency(array, n, freq);
+
+    printf("\nNumbers : Frequency\n");
+    for( i = 0; i < 10; i++)
 	{
-        if(visited[i] == 1) // checks if already counted
-		continue; // skips it
-        count = 1;
-        for(j=i+1; j<n; j++) 
-		{
-            if(arr[i] == arr[j]) 
-			{
-                count++;
-                visited[j] = 1;
-            }
-        }
-        printf("%d occurs %d times\n", arr[i], count);
+        printf("%d appeared : %d times!\n", i + 1, freq[i]);
     }
 
     return 0;
