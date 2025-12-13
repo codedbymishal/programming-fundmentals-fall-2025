@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main() 
+{
     int terms, t1 = 0, t2= 1, next, i;
 
     printf("Enter the number of terms: ");
