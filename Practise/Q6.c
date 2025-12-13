@@ -33,8 +33,8 @@ int main()
         printf("Palindrome\n");
     else
         printf("Not Palindrome\n");
-
     return 0;
 }
+
 
 
