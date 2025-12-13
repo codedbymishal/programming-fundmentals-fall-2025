@@ -31,7 +31,7 @@ int main() {
     str1[i] = '\0';  // terminate concatenated string
 
     printf("Concatenated string: %s\n", str1);
-
     return 0;
 }
+
 
